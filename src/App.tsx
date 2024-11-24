@@ -8,7 +8,7 @@ function App() {
       templateAreas={{
         base: `"nav" "main"`,
         lg: `"nav nav" "aside main"`,
-      } }>
+      }as const }>
       <GridItem area="nav">
         <NavBar />
       </GridItem>
