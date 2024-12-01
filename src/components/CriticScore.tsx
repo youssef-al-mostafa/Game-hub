@@ -11,7 +11,8 @@ export const CriticScore = ({ score }: Props) => {
         <Badge fontSize='14px' 
                paddingX={2} 
                borderRadius='4px'
-               colorScheme={color}>
+               colorScheme={color}
+               marginInline='0px !important'>
             {score}
         </Badge>
     )
