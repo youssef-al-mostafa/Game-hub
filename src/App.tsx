@@ -21,16 +21,15 @@ function App() {
   const [gameQuery, setGameQuery] = useState<GameQuery>({} as GameQuery)
 
   return (
-    /* @ts-ignore */
     <Grid
       templateAreas={{
         base: `"nav" "main"`,
         lg: `"nav nav" "aside main"`,
       } as const}
       templateColumns={{
-        base: 'fr',
-        lg: '200px fr'
-      }}>
+        base: '1fr',
+        lg: '200px 1fr'
+      } as const}>
       <GridItem area="nav">
         <NavBar onSearch={(searchText) => setGameQuery({...gameQuery, searchText})} />
       </GridItem>
